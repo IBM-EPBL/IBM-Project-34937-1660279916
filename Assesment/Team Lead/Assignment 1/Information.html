@@ -1,0 +1,96 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: grey;
+}
+
+form {
+      background: transparent;
+      box-shadow: 0px 8px 32px 0 rgb(0,0,0);
+      width: 80%;
+      border-radius: 20px;
+}
+
+h1 {
+      text-align: center;
+      margin-bottom: 5%;
+      letter-spacing: 3px;
+}
+
+input {
+      width: 80%;
+      font-size: 30px;
+      margin:20px;
+      margin-left: 10%;
+      border: none;
+      outline: none;
+      background: transparent;
+      border-bottom: 1px solid black;
+}
+
+label {
+      font-size: 30px;
+      display:block;
+      margin-left: 10%;
+}
+
+button {
+       width: 20%;
+       border: none;
+       outline: none;
+       font-size: 20px;
+       margin: 5%;
+       padding: 10px;
+       margin-left: 40%;
+       background: transparent;
+       border-radius: 5px;
+       box-shadow: 5px 5px 10px 0px rgb(0,0,0);
+}
+
+</style>
+
+<script type="text/javascript">
+    function display(){
+        var s=document.getElementById("+" "name").value
+        var q=document.getElementById("+" "qualification").value
+        var d=document.getElementById("+" "age").value
+        var e=document.getElementById("+" "email").value
+        document.getElementById("+" "information").innerHTML="Name:"+s+"<br>"+"Qualification:"+q+"<br>"+"Age:"+d+"<br>"+"Email:"+e
+        
+    }
+    </script>
+</head>
+
+<body>
+<form id="information" method="/Assignemnt-02.html" method="post"><br>
+<h1>Information</h1>
+<label for="name">Name:</label>
+    <input id="name" type="text" name="name" required>
+
+<label for="qualification">Qualification:</label>
+    <input id="qualification" type="text" name="qualification" required>
+
+<label for="age">Age:</label>
+    <input id="age" type="number" name="age" required>
+
+<label for="email">Email:</label>
+    <input  id="email" type="email" name="email" required>
+
+    <button onClick="display()">Send</button>
+</form>
+</body>
+</html> 
