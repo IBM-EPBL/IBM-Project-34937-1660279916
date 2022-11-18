@@ -1,0 +1,49 @@
+Upload an 5 images to ibm object storage and make it public. write html code to 
+displaying all the 5 images.
+-----------------------------------------------------------------------------------
+--------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Smart Fashion</title>
+<style>
+body {
+background-color: gray;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+img {
+height: 240px;
+border-radius: 10px;
+margin: 10px;
+}
+</style>
+</head>
+
+<body>
+<h1>Wellcom To Fashion Store</h1>
+<div>
+<img 
+src="https://project32.s3.jp-tok.cloud-object-storage.appdomain.cloud/download%20(1).jfif"
+alt="Dress" srcset="">
+<img 
+src="https://project32.s3.jp-tok.cloud-object-storage.appdomain.cloud/download%20(2).jfif"
+alt="Dress" srcset="">
+<img 
+src="https://project32.s3.jp-tok.cloud-object-storage.appdomain.cloud/download%20(3).jfif"
+alt="Dress" srcset="">
+<img 
+src="https://project32.s3.jp-tok.cloud-object-storage.appdomain.cloud/download.jfif"
+alt="Dress" srcset="">
+<img 
+src="https://project32.s3.jp-tok.cloud-object-storage.appdomain.cloud/download.png"
+alt="Dress" srcset="">
+</div>
+</body>
+
+</html>
