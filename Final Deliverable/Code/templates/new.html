@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <link href="{{ url_for('static',filename='css/custom.css') }}" rel="stylesheet" type="text/css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <title>Smart Fashion Store - Register</title>
+        <style>
+body {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color: brown;
+    }
+
+ 
+
+h1 {
+      font-size: 30px;
+      text-align: center;
+      color:crimson;
+      text-shadow: 2px 2px 4px rgb(0,0,0,.2);
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      opacity: .8;
+}
+
+input {
+      width: 80%;
+      margin: 5%;
+      background: transparent;
+      font-size:15px;
+      padding: 5px 5px;
+      border-bottom:1px solid white;
+      opacity:.8;
+}
+
+button {
+      font-size: 15px;
+      width: 30%;
+      margin: 5%;
+      margin-left: 35%;
+      color: white;
+      background: transparent;
+      border: none;
+      outline: none;
+      box-shadow: 2px 2px 8px rgb(0,0,0,.5);
+      text-shadow: 2px 2px 8px rgb(0,0,0,.5);
+      border-radius: 8px;
+      border-left: 1px solid rgb(255,255,255,0.3);
+      border-top: 1px solid rgb(255,255,255,0.3);
+      
+}
+
+     </style>
+    </head>
+
+
+
+
+
+
+    <style>
+    .continer-color{
+        background-color:greenyellow;
+    }
+</style>
+
+
+
+
+
+    <body>
+        <header>
+            <nav class="navbar fixed-top navbar-dark container-color navbar-expand-sm box-shadow">
+              <a href="/" class="navbar-brand d-flex align-items-center">
+                  <strong style="text-color: tomato"><i class="fa fa-shopping-bag"></i>Smart Fashion Store</strong>
+              </a>
+            </nav>
+        </header><br />
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h1>Register</h1>
+                        <p>{{msg}}</p>
+                        <form action="/register/" class="form" method="post">
+                            <input type="text" name="username" id="username" placeholder="Username" autofocus required > <span id="user-msg" class="alert alert-danger"></span><br /><br />
+                            <input type="password" name="password" id="password" placeholder="Password" required > <span id="password-msg" class="alert alert-danger"></span><br /><br />
+                            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required> <span id="confirm-msg" class="alert alert-danger"></span><br /><br />
+                            <input type="text" name="fname" id="fname" placeholder="First Name" required> <span id="fname-msg" class="alert alert-danger"></span><br /><br />
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" required> <span id="lname-msg" class="alert alert-danger"></span><br /><br />
+                            <input type="email" name="email" id="email" placeholder="Email" required> <span id="email-msg" class="alert alert-danger"></span><br /><br /><br />
+                            <button type="reset" class="btn btn-secondary">Clear</button>
+                            <button type="submit" id="submit" class="btn btn-primary">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <!-- Custom JS Scripts -->
+        <script src="{{ url_for('static',filename='js/validate.js') }}"></script>
+    </body>
+</html>
